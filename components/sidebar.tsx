@@ -12,7 +12,6 @@ import {
   MessageSquare,
   Music,
   Settings,
-  Video,
   VideoIcon,
 } from "lucide-react";
 
