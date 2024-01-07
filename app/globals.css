@@ -1,7 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+html,
+body,
+:root {
+  height: 100%;
+  /* width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'pnum' 1, 'tnum' 1, 'onum' 1, 'lnum' 1, 'dlig' 1, 'zero' 1, 'ss01' 1, 'cv01' 1, 'cv03' 1, 'cv04' 1, 'cv11' 1, 'cv12' 1, 'cv14' 1, 'cv15' 1, 'cv16' 1, 'cv17' 1, 'cv18' 1, 'cv19' 1, 'cv20' 1, 'cv21' 1, 'cv22' 1, 'cv23' 1, 'cv24' 1, 'cv25' 1, 'cv26' 1, 'cv27' 1, 'cv28' 1, 'cv29' 1, 'cv30' 1, 'cv31' 1, 'cv32' 1, 'cv33' 1, 'cv34' 1, 'cv35' 1, 'cv36' 1, 'cv37' 1, 'cv38' 1, 'cv39' 1, 'cv40' 1, 'cv41' 1, 'cv42' 1, 'cv43' 1, 'cv44' 1, 'cv45' 1, 'cv46' 1, 'cv47' 1, 'cv48' 1, 'cv49' 1 */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -9,63 +31,63 @@
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
- 
+
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
- 
+
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
- 
+
     --accent: 0 0% 96.1%;
     --accent-foreground: 0 0% 9%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
- 
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
- 
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
- 
+
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
- 
+
     --accent: 0 0% 14.9%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
