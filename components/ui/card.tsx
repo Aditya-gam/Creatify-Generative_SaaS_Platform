@@ -1,34 +1,20 @@
 import * as React from "react";
-import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
 const Card = React.forwardRef<
   HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement> & { onClick: () => void; href: string }
->(({ className, onClick, href, ...props }, ref) => {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push(href);
-    if (onClick) {
-      onClick();
-    }
-  };
-
-  return (
-    <div
-      ref={ref}
-      className={cn(
-        "rounded-lg border bg-card text-card-foreground shadow-sm",
-        className
-      )}
-      onClick={handleClick}
-      {...props}
-    />
-  );
-});
-
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      "rounded-lg border bg-card text-card-foreground shadow-sm",
+      className
+    )}
+    {...props}
+  />
+));
 Card.displayName = "Card";
 
 const CardHeader = React.forwardRef<
@@ -84,7 +70,7 @@ const CardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex items-center p-6 pt-0", className)}
+    className={cn(" flex items-center p-6 pt-0", className)}
     {...props}
   />
 ));
